@@ -3,7 +3,7 @@ import "./footer.scss";
 import textData from "../../content/footer.yaml";
 
 const Footer = () => {
-    return <div className="FooterWrapper">
+    return <footer className="FooterWrapper">
         <div className="FooterContainer">
             <div className="Logo">
                 findr
@@ -39,7 +39,7 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
 }
 
 export default Footer;

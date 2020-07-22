@@ -3,7 +3,7 @@ import "./header.scss";
 import textData from "../../content/header.yaml";
 
 const Header = () => {
-    return <div className="HeaderWrapper">
+    return <header className="HeaderWrapper">
         <div className="HeaderContainer">
             <div className="Logo">
                 findr
@@ -18,7 +18,7 @@ const Header = () => {
                 </div>
             </div>
         </div>
-    </div>;
+    </header>;
 }
 
 export default Header;
