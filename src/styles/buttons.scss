@@ -1,0 +1,27 @@
+.Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2D2CE9;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  box-sizing: border-box;
+  min-width: 220px;
+  min-height: 45px;
+  padding: 11px 28px;
+  border-radius: 25px;
+  cursor: pointer;
+
+  &.Small {
+    min-width: 106px;
+    min-height: 36px;
+    padding: 10px 34px;
+  }
+
+  &.Secondary {
+    border: 2px solid #2D2CE9;
+    color: #2D2CE9;
+    background: white;
+  }
+}

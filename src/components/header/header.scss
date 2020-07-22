@@ -1,0 +1,43 @@
+.HeaderWrapper {
+  height: 60px;
+  width: 100%;
+  background: white;
+
+  .HeaderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    color: #2D2CE9;
+
+    .Logo {
+      font-size: 34px;
+    }
+
+    .Menu {
+      display: flex;
+
+      .Links {
+        display: flex;
+        align-items: center;
+
+        .Link {
+          font-weight: bold;
+          font-size: 15px;
+          margin-right: 40px;
+          cursor: pointer;
+        }
+      }
+
+      .Buttons {
+        display: flex;
+
+        .SignUp {
+          margin-right: 11px;
+        }
+      }
+    }
+  }
+}
