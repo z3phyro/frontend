@@ -1,0 +1,8 @@
+login:
+  title: Welcome back
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo. Lorem ipsum dolor sit amet, consectetur
+  email: Company email address
+  password: Password
+  forgotPassword: Forgot password
+  button: Sign In
+  noAccount: Don’t have an account yet?

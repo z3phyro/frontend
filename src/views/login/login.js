@@ -1,30 +1,31 @@
 import React from "react";
 import "./login.scss";
+import textData from "../../content/auth.yaml";
 
 const Login = () => {
     return <div className="LoginContainer">
         <div className="LoginBox">
-            <div className="Title">Welcome back</div>
-            <div className="Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo. Lorem ipsum dolor sit amet, consectetur</div>
+            <div className="Title">{textData.login.title}</div>
+            <div className="Description">{textData.login.description}</div>
 
             <div className="Form">
                 <div className="InputGroup">
                     <div className="Label">
-                        Company email address
+                        {textData.login.email}
                     </div>
                     <input type="text" className="Input"/>
                 </div>
                 <div className="InputGroup Bottom">
                     <div className="Label">
-                        Password
+                        {textData.login.password}
                     </div>
                     <input type="text" className="Input"/>
                 </div>
-                <a href="#" className="ForgotPassword">Forgot password</a>
+                <a href="#" className="ForgotPassword">{textData.login.forgotPassword}</a>
             </div>
 
-            <div className="Button">Sign In</div>
-            <a href="#" className="NoAccount">Don’t have an account yet?</a>
+            <div className="Button">{textData.login.button}</div>
+            <a href="#" className="NoAccount">{textData.login.noAccount}</a>
         </div>
     </div>
 }
