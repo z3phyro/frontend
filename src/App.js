@@ -7,6 +7,7 @@ import {
 import Home from "./views/home/home";
 import {StoreContext} from 'storeon/react';
 import {store} from "./store";
+import Login from "./views/login/login";
 
 export default function BasicExample() {
     return (
@@ -14,6 +15,7 @@ export default function BasicExample() {
             <Router>
                 <Switch>
                     <Route exact path="/" component={Home}/>
+                    <Route exact path="/login" component={Login}/>
                 </Switch>
             </Router>
         </StoreContext.Provider>
