@@ -1,5 +1,6 @@
 import React from "react";
 import "./footer.scss";
+import textData from "../../content/footer.yaml";
 
 const Footer = () => {
     return <div className="FooterWrapper">
@@ -31,7 +32,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="Register">
-                <div className="Title">Register for updates</div>
+                <div className="Title">{textData.register.title}</div>
                 <div className="RegisterGroup">
                     <input type="text"/>
                     <div className="Square"></div>

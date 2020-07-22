@@ -2,6 +2,7 @@ import React from 'react';
 import "./home.scss";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
+import textData from "../../content/home.yaml";
 
 const Home = () => {
     return <div className="HomeContainer">
@@ -9,55 +10,37 @@ const Home = () => {
         <div className="MainContainer">
             <div className="Info Center">
                 <div className="Title">
-                    Lorem ipsum dolor sit amet,
-                    adipiscing elit, sed
+                    {textData.main.title}
                 </div>
-                <div className="Button">Get started</div>
+                <div className="Button">{textData.main.button}</div>
             </div>
         </div>
         <div className="HowItWorksContainer">
             <div className="Info Center">
                 <div className="Title">
-                    How it works
+                    {textData.howItWorks.title}
                 </div>
             </div>
             <div className="Characteristics">
-                <div className="Characteristic">
+                {textData.howItWorks.characteristics.map((characteristic, i) => <div key={i} className="Characteristic">
                     <div className="Image"></div>
                     <div className="Description">
-                        Lorem ipsum dolor sit amet, consectetur
+                        {characteristic.data.description}
                     </div>
-                </div>
-                <div className="Characteristic">
-                    <div className="Image"></div>
-                    <div className="Description">
-                        Lorem ipsum dolor sit amet, consectetur
-                    </div>
-                </div>
-                <div className="Characteristic">
-                    <div className="Image"></div>
-                    <div className="Description">
-                        Lorem ipsum dolor sit amet, consectetur
-                    </div>
-                </div>
+                </div>)}
             </div>
-            <div className="Button">Get started</div>
+            <div className="Button">{textData.howItWorks.button}</div>
         </div>
-        <div className="WhyChooseContainer">
+        <div className="WhyUsContainer">
             <div className="Data">
                 <div className="Info">
                     <div className="Title">
-                        Why Choose us?
+                        {textData.whyUs.title}
                     </div>
-                    <div className="Description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea
-                        <br/>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna
+                    <div className="Description" dangerouslySetInnerHTML={{__html: textData.whyUs.description}}>
+
                     </div>
-                    <div className="Button">Get started</div>
+                    <div className="Button">{textData.whyUs.button}</div>
                 </div>
             </div>
             <div className="Image">
@@ -68,96 +51,51 @@ const Home = () => {
         <div className="WhatWeOfferContainer">
             <div className="Info">
                 <div className="Title">
-                    What we offer
+                    {textData.whatWeOffer.title}
                 </div>
             </div>
             <div className="Offers">
-                <div className="Offer">
+                {textData.whatWeOffer.offers.map((offer, i) => <div key={i} className="Offer">
                     <div className="Title">
-                        2000+
+                        {offer.data.title}
                     </div>
                     <div className="Description">
-                        Lorem ipsum dolor sit amet, consectetur
+                        {offer.data.description}
                     </div>
-                </div>
-                <div className="Offer">
-                    <div className="Title">
-                        24hrs
-                    </div>
-                    <div className="Description">
-                        Lorem ipsum dolor sit amet, consectetur
-                    </div>
-                </div>
-                <div className="Offer">
-                    <div className="Title">
-                        300+
-                    </div>
-                    <div className="Description">
-                        Lorem ipsum dolor sit amet, consectetur
-                    </div>
-                </div>
+                </div>)}
             </div>
-            <div className="Button">Get started</div>
+            <div className="Button">{textData.whatWeOffer.button}</div>
         </div>
 
         <div className="PartnersContainer">
             <div className="Info Center">
                 <div className="Title">
-                    Used by the world's most innovative companies
+                    {textData.partnerCompanies.title}
                 </div>
             </div>
             <div className="Partners">
-                <div className="Partner">
-                </div>
-                <div className="Partner">
-                </div>
-                <div className="Partner">
-                </div>
-                <div className="Partner">
-                </div>
-                <div className="Partner">
-                </div>
-                <div className="Partner">
-                </div>
-                <div className="Partner">
-                </div>
-                <div className="Partner">
-                </div>
+                {textData.partnerCompanies.partners.map((partner, i) =><div key={i} className="Partner">
+                </div>)}
             </div>
             <div className="Button Secondary">
-                Get started
+                {textData.partnerCompanies.button}
             </div>
         </div>
 
-        <div className="MeetContainer">
+        <div className="MeetOurTeamContainer">
             <div className="Info">
                 <div className="Title">
-                    Meet the team
+                    {textData.meetOurTeam.title}
                 </div>
             </div>
             <div className="Members">
-                <div className="Member">
+                {textData.meetOurTeam.members.map((member, i) => <div key={i} className="Member">
                     <div className="Avatar"></div>
-                    <div className="Name">Greg Watts</div>
-                    <div className="Position">Cheif Executive Officer</div>
-                </div>
-                <div className="Member">
-                    <div className="Avatar"></div>
-                    <div className="Name">Greg Watts</div>
-                    <div className="Position">Cheif Executive Officer</div>
-                </div>
-                <div className="Member">
-                    <div className="Avatar"></div>
-                    <div className="Name">Greg Watts</div>
-                    <div className="Position">Cheif Executive Officer</div>
-                </div>
-                <div className="Member">
-                    <div className="Avatar"></div>
-                    <div className="Name">Greg Watts</div>
-                    <div className="Position">Cheif Executive Officer</div>
-                </div>
+                    <div className="Name">{member.data.name}</div>
+                    <div className="Position">{member.data.position}</div>
+                </div>)}
             </div>
-            <div className="Button">Get started</div>
+            <div className="Button">{textData.meetOurTeam.button}</div>
         </div>
         <Footer/>
     </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import "./header.scss";
+import textData from "../../content/header.yaml";
 
 const Header = () => {
     return <div className="HeaderWrapper">
@@ -9,14 +10,11 @@ const Header = () => {
             </div>
             <div className="Menu">
                 <div className="Links">
-                    <div className="Link">How it works</div>
-                    <div className="Link">For Startups</div>
-                    <div className="Link">For Corporations</div>
-                    <div className="Link">For Investors</div>
+                    {textData.links.map((link, i) => <div key={i} className="Link">{link.data.title}</div>)}
                 </div>
                 <div className="Buttons">
-                    <div className="Button Secondary SignUp Small">Sign up</div>
-                    <div className="Button Small">Login</div>
+                    <div className="Button Secondary SignUp Small">{textData.signUp}</div>
+                    <div className="Button Small">{textData.login}</div>
                 </div>
             </div>
         </div>

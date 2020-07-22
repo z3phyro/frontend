@@ -1,0 +1,70 @@
+main:
+  title: "Lorem ipsum dolor sit amet,
+    adipiscing elit, sed"
+  button: "Get started"
+
+howItWorks:
+  title: "How it works"
+  characteristics:
+    - data:
+        description: "Lorem ipsum dolor sit amet, consectetur"
+    - data:
+        description: "Lorem ipsum dolor sit amet, consectetur"
+    - data:
+        description: "Lorem ipsum dolor sit amet, consectetur"
+  button: "Get started"
+
+whyUs:
+  title: "Why Choose us?"
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+    aliquip ex ea
+    <br/>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+    et dolore magna"
+  button: "Get started"
+
+whatWeOffer:
+  title: "What we offer"
+  button: "Get started"
+  offers:
+    - data:
+        title: "2000+"
+        description: "Lorem ipsum dolor sit amet, consectetur"
+    - data:
+        title: "24hrs"
+        description: "Lorem ipsum dolor sit amet, consectetur"
+    - data:
+        title: "300+"
+        description: "Lorem ipsum dolor sit amet, consectetur"
+
+partnerCompanies:
+  title: "Used by the world's most innovative companies"
+  button: "Get started"
+  partners:
+    - data:
+    - data:
+    - data:
+    - data:
+    - data:
+    - data:
+    - data:
+    - data:
+
+meetOurTeam:
+  title: "Meet the team"
+  button: "Get started"
+  members:
+    - data:
+        name: "Greg Watts"
+        position: "Cheif Executive Officer"
+    - data:
+        name: "Greg Watts"
+        position: "Cheif Executive Officer"
+    - data:
+        name: "Greg Watts"
+        position: "Cheif Executive Officer"
+    - data:
+        name: "Greg Watts"
+        position: "Cheif Executive Officer"
+
