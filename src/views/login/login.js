@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import "./login.scss";
 import textData from "../../content/auth.yaml";
 import * as yup from "yup"
+import InputGroup from "../../components/inputGroup/inputGroup";
 
 const schema = yup.object().shape({
     email: yup.string("Please enter an email").email("Invalid email").required("Please enter an email"),
@@ -55,26 +56,21 @@ const Login = () => {
         validate();
     }
 
+    const inputProps = {
+        onBlur,
+        onChange,
+        formErrors,
+        formBlur
+    };
+
     return <div className="LoginContainer">
         <div className="LoginBox">
             <div className="Title">{textData.login.title}</div>
             <div className="Description">{textData.login.description}</div>
 
             <div className="Form">
-                <div className="InputGroup">
-                    <div className="Label">
-                        {textData.login.email}
-                    </div>
-                    <input name="email" type="text" className={`Input ${formErrors["email"] ? 'Error' : ''}`} onBlur={onBlur} onChange={onChange}/>
-                    {formErrors["email"] && formBlur["email"] && <div className="ErrorText">{formErrors["email"]}</div>}
-                </div>
-                <div className="InputGroup">
-                    <div className="Label">
-                        {textData.login.password}
-                    </div>
-                    <input name="password" type="text" className={`Input Bottom ${formErrors["password"] ? 'Error' : ''}`} onBlur={onBlur} onChange={onChange}/>
-                    {formErrors["password"] && formBlur["password"] && <div className="ErrorText">{formErrors["password"]}</div>}
-                </div>
+                <InputGroup name="email" label={textData.login.email} {...inputProps}/>
+                <InputGroup className="Bottom" name="password" label={textData.login.password} type="password" {...inputProps}/>
                 <a href="#" className="ForgotPassword">{textData.login.forgotPassword}</a>
             </div>
 
