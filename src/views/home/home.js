@@ -3,8 +3,14 @@ import "./home.scss";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import textData from "../../content/home.yaml";
+import community from "../../assets/img/oval-noun-community-3158317-mask.svg";
+import find from "../../assets/img/oval-noun-find-677797-mask.svg";
+import register from "../../assets/img/oval-noun-register-3194805-mask.svg";
+import whyUsBkg from "../../assets/img/why-choose-bkg.png";
+import memberImg from "../../assets/img/member.png";
 
 const Home = () => {
+    const howItWorkImgs = [find, register, community];
     return <div className="HomeContainer">
         <Header/>
         <div className="MainContainer">
@@ -23,7 +29,7 @@ const Home = () => {
             </div>
             <div className="Characteristics">
                 {textData.howItWorks.characteristics.map((characteristic, i) => <div key={i} className="Characteristic">
-                    <div className="Image"></div>
+                    <img className="Image" src={howItWorkImgs[i]} alt="HowItWorks"/>
                     <div className="Description">
                         {characteristic.data.description}
                     </div>
@@ -43,9 +49,9 @@ const Home = () => {
                     <div className="Button">{textData.whyUs.button}</div>
                 </div>
             </div>
-            <div className="Image">
+            <img className="Image">
 
-            </div>
+            </img>
         </div>
 
         <div className="WhatWeOfferContainer">
@@ -90,7 +96,7 @@ const Home = () => {
             </div>
             <div className="Members">
                 {textData.meetOurTeam.members.map((member, i) => <div key={i} className="Member">
-                    <div className="Avatar"></div>
+                    <img src={memberImg} className="Avatar" alt="Member"/>
                     <div className="Name">{member.data.name}</div>
                     <div className="Position">{member.data.position}</div>
                 </div>)}
