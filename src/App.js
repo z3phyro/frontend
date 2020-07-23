@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import Home from "./views/home/home";
 import {StoreContext} from 'storeon/react';
-import {store} from "./store";
+import {store} from "./core/store";
 import Login from "./views/login/login";
 
 export default function BasicExample() {

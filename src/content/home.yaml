@@ -7,10 +7,13 @@ howItWorks:
   title: "How it works"
   characteristics:
     - data:
+        image: "oval-noun-find-677797-mask.svg"
         description: "Lorem ipsum dolor sit amet, consectetur"
     - data:
+        image: "oval-noun-register-3194805-mask.svg"
         description: "Lorem ipsum dolor sit amet, consectetur"
     - data:
+        image: "oval-noun-community-3158317-mask.svg"
         description: "Lorem ipsum dolor sit amet, consectetur"
   button: "Get started"
 
@@ -43,28 +46,48 @@ partnerCompanies:
   button: "Get started"
   partners:
     - data:
+        image: "image.svg"
+        name: "empty"
     - data:
+        image: "image.svg"
+        name: "empty"
     - data:
+        image: "image.svg"
+        name: "empty"
     - data:
+        image: "image.svg"
+        name: "empty"
     - data:
+        image: "image.svg"
+        name: "empty"
     - data:
+        image: "image.svg"
+        name: "empty"
     - data:
+        image: "image.svg"
+        name: "empty"
     - data:
+        image: "image.svg"
+        name: "empty"
 
 meetOurTeam:
   title: "Meet the team"
   button: "Get started"
   members:
     - data:
+        avatar: "member.png"
         name: "Greg Watts"
         position: "Cheif Executive Officer"
     - data:
+        avatar: "member.png"
         name: "Greg Watts"
         position: "Cheif Executive Officer"
     - data:
+        avatar: "member.png"
         name: "Greg Watts"
         position: "Cheif Executive Officer"
     - data:
+        avatar: "member.png"
         name: "Greg Watts"
         position: "Cheif Executive Officer"
 

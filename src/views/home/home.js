@@ -3,14 +3,8 @@ import "./home.scss";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import textData from "../../content/home.yaml";
-import community from "../../assets/img/oval-noun-community-3158317-mask.svg";
-import find from "../../assets/img/oval-noun-find-677797-mask.svg";
-import register from "../../assets/img/oval-noun-register-3194805-mask.svg";
-import whyUsBkg from "../../assets/img/why-choose-bkg.png";
-import memberImg from "../../assets/img/member.png";
 
 const Home = () => {
-    const howItWorkImgs = [find, register, community];
     return <div className="HomeContainer">
         <Header/>
         <div className="MainContainer">
@@ -29,7 +23,7 @@ const Home = () => {
             </div>
             <div className="Characteristics">
                 {textData.howItWorks.characteristics.map((characteristic, i) => <div key={i} className="Characteristic">
-                    <img className="Image" src={howItWorkImgs[i]} alt="HowItWorks"/>
+                    <img className="Image" src={`${process.env.PUBLIC_URL}/img/${characteristic.data.image}`} alt="HowItWorks"/>
                     <div className="Description">
                         {characteristic.data.description}
                     </div>
@@ -80,8 +74,8 @@ const Home = () => {
                 </div>
             </div>
             <div className="Partners">
-                {textData.partnerCompanies.partners.map((partner, i) =><div key={i} className="Partner">
-                </div>)}
+                {textData.partnerCompanies.partners.map((partner, i) =><img key={i} src={`${process.env.PUBLIC_URL}/img/${partner.data.image}`} alt={partner.data.name} className="Partner">
+                </img>)}
             </div>
             <div className="Button Secondary">
                 {textData.partnerCompanies.button}
@@ -96,7 +90,7 @@ const Home = () => {
             </div>
             <div className="Members">
                 {textData.meetOurTeam.members.map((member, i) => <div key={i} className="Member">
-                    <img src={memberImg} className="Avatar" alt="Member"/>
+                    <img src={`${process.env.PUBLIC_URL}/img/${member.data.avatar}`}className="Avatar" alt="Member"/>
                     <div className="Name">{member.data.name}</div>
                     <div className="Position">{member.data.position}</div>
                 </div>)}
