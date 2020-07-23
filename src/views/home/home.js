@@ -38,14 +38,12 @@ const Home = () => {
                         {textData.whyUs.title}
                     </div>
                     <div className="Description" dangerouslySetInnerHTML={{__html: textData.whyUs.description}}>
-
                     </div>
                     <div className="Button">{textData.whyUs.button}</div>
                 </div>
             </div>
-            <img className="Image">
-
-            </img>
+            <div className="Image">
+            </div>
         </div>
 
         <div className="WhatWeOfferContainer">

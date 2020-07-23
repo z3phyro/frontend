@@ -1,0 +1,41 @@
+.OnboardingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: #F4F6FC;
+
+  .OnboardingBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1054px;
+    height: 575px;
+    padding-top: 85px;
+
+    .Title {
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      color: #434343;
+      margin-bottom: 40px;
+    }
+
+    .Description {
+      max-width: 437px;
+      font-size: 14px;
+      text-align: center;
+      line-height: 16px;
+      margin-bottom: 65px;
+    }
+
+    .Search {
+      width: 513px;
+      height: 48px;
+      padding: 14px 22px;
+      border-radius: 8px;
+      font-size: 18px;
+    }
+  }
+}

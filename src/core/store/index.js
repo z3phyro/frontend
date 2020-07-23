@@ -1,4 +1,4 @@
-import { createStoreon } from 'storeon'
-import { projects } from './projects'
+import { createStoreon } from 'storeon';
+import { auth } from './auth';
 
-export const store = createStoreon([projects])
+export const store = createStoreon([auth]);

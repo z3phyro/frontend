@@ -19,6 +19,7 @@ const getValidationMethods = (validationSchema, formErrors, setFormErrors, formS
 
         return false;
     }
+
     const onChange = (e) => {
         setFormState({
             ...formState,
@@ -36,7 +37,6 @@ const getValidationMethods = (validationSchema, formErrors, setFormErrors, formS
 
         validate();
     }
-
 
     return {
         validate,

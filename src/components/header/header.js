@@ -1,6 +1,7 @@
 import React from "react";
 import "./header.scss";
 import textData from "../../content/header.yaml";
+import {Link} from "react-router-dom";
 
 const Header = () => {
     return <header className="HeaderWrapper">
@@ -14,7 +15,7 @@ const Header = () => {
                 </div>
                 <div className="Buttons">
                     <div className="Button Secondary SignUp Small">{textData.signUp}</div>
-                    <div className="Button Small">{textData.login}</div>
+                    <Link className="Button Small" to={'/login'}>{textData.login}</Link>
                 </div>
             </div>
         </div>
